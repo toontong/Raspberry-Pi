@@ -38,6 +38,7 @@ root@raspberrypi:# cat /etc/wpa_supplicant.wired.conf
     }
     
 root@raspberrypi:# cat 802wired.sh 
+
     #!/bin/bash
     ifconfig eth0 up
     ifconfig eth0 promisc
@@ -51,6 +52,7 @@ root@raspberrypi:# cat 802wired.sh
 ### 二、软件源 --  [使用中国科学技术大学的源,帮助文档在此](https://lug.ustc.edu.cn/wiki/mirrors/help/raspbian)
 
 root@raspberrypi:# cat /etc/apt/sources.list
+
     deb http://mirrors.ustc.edu.cn/raspbian/raspbian/ wheezy main non-free contrib
     deb-src http://mirrors.ustc.edu.cn/raspbian/raspbian/ wheezy main non-free contrib
     
