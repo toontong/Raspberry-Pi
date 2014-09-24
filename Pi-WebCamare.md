@@ -11,10 +11,10 @@ Raspberry-Pi 树莓派-摄像头篇
 
 ## 2.1 关于[motion](http://pingbin.com/2012/12/raspberry-pi-web-cam-server-motion/)
 
-- 配置项很多，很烦。
+- 配置项很多。
 - 使用中CPU占用很高，我使用Chrome最新版，没法显示出图像，使用Pi内置的浏览器可以。
+- 手机可使用 [iCamViewer](https://itunes.apple.com/ca/app/icamviewer-cctv-camera-ip/id346469891?mt=8) 查看
 - 无声音
-- 放弃
 
 ## 2.2 关于[mjpg-streamer](http://wolfpaulus.com/jounal/embedded/raspberrypi_webcam/)
 
