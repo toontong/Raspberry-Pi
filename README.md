@@ -2,7 +2,9 @@ Raspberry-Pi 树莓派
 ============
 
 最近淘宝了一个`红色`树莓派 B+，记录一下过程。
-[红色树莓派 B+](!Pi.png)
+
+![红色树莓派 B+](Pi.png)
+
 - 价格RMB 199 ，裸机不包邮，没配置，没外壳。
 - [中文说明书](Raspberry_Pi_B.pdf), 是B型，没找到B+型的说明书，B+比B多了2个USB口共4个
 - 买了后才知道`红色`的派没`蓝色`的好；说蓝色才是正统之类。红色质量不好，没过流保护等。
@@ -52,26 +54,31 @@ root@raspberrypi:# cat 802wired.sh
 
 ### 二、软件源 --  [使用中国科学技术大学的源,帮助文档在此](https://lug.ustc.edu.cn/wiki/mirrors/help/raspbian)
 
-root@raspberrypi:# cat /etc/apt/sources.list
+    root@raspberrypi:# cat /etc/apt/sources.list
     deb http://mirrors.ustc.edu.cn/raspbian/raspbian/ wheezy main non-free contrib
     deb-src http://mirrors.ustc.edu.cn/raspbian/raspbian/ wheezy main non-free contrib
 
 ### 三、编译了好的openresty
 
-1. 先编译安装好openssl-1.0.1i，编译项为
+- 先编译安装好openssl-1.0.1i，编译项为
+
 	config --prefix=/usr/local --openssldir=/usr/local/openssl shared
 
-2. 安装pcre
+- 安装pcre
+
 	apt-get install libpcre++
 
-3. openresty编译项为：
+- openresty编译项为：
+
 	./configure --prefix=/usr/local/openresty --with-pcre  --with-pcre-jit --with-http_stub_status_module --with-luajit
 
-- 备份一个编译好的二进制包，编译过程耗时太长了。
+- 备份一个[编译好的二进制包](openresty-1.7.0.1.bin.tar.gz)，编译过程耗时太长了。
 - nginx本身是静态编译，同类系统，copy过去就可以运行的。
-- 编译的系统是 
+- 编译的系统是 Debian-2014-09-09-wheezy-raspbian.img
+
 	root@raspberrypi:/home/pi# uname -a
 	Linux raspberrypi 3.12.28+ #709 PREEMPT Mon Sep 8 15:28:00 BST 2014 armv6l GNU/Linux
+	
 
 使用感受
 -----
