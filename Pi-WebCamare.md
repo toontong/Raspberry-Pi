@@ -19,7 +19,7 @@ Raspberry-Pi 树莓派-摄像头篇
 
 ## 2.2 关于 mjpg-streamer
 - 没apt-get源，有二进制包，下载解压即用。
-- [源码在此](https://svn.code.sf.net/p/mjpg-streamer/code/mjpg-streamer/)，(编译方式在此)(https://github.com/meinside/rpi-mjpg-streamer),   网上源码分支太多了，有些编译过。
+- [源码在此](https://svn.code.sf.net/p/mjpg-streamer/code/mjpg-streamer/)，[编译方式在此](https://github.com/meinside/rpi-mjpg-streamer),   网上源码分支太多了，有些编译过。
 - 配置很简单，所以没motion功能或强, github上有很多fork
 - CPU占用不高。
 - 启动后可直接 Chrome访问，有页面版，也可使用[Video Lan Client播放器](http://www.videolan.org/vlc/index.html)直接播放
@@ -27,6 +27,7 @@ Raspberry-Pi 树莓派-摄像头篇
 - 无声音
 - 杂牌摄像头报错：`The inpout device does not supports MJPEG mode` -- 不能用。 
 - 效果：
+
   ![mjpg-streamer](./mjpg-streamer.png)
 
 #TODO 决定fork一个mjpg-streamer出来看看代码。
