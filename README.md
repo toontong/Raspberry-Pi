@@ -42,6 +42,7 @@ root@raspberrypi:# cat /etc/wpa_supplicant.wired.conf
     }
     
 root@raspberrypi:# cat 802wired.sh 
+
     #!/bin/bash
     ifconfig eth0 up
     ifconfig eth0 promisc
@@ -86,3 +87,4 @@ root@raspberrypi:# cat 802wired.sh
 2. USB口真是越多越好。也是当时买B+考虑点。
 3. 发热量感觉不大，在编译[openresty](http://openresty.org/)，几个小时，手能摸
 4. [摄像头-- 要独立一篇讲讲](Pi-WebCamare.md)。
+5. xbian-XMBC安装试用,很烂,根本没法完整看完一个视频,加载youku非常慢.
